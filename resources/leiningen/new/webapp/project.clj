@@ -17,9 +17,12 @@
                  [org.clojure/tools.logging "0.3.1"]
                  [org.apache.logging.log4j/log4j-slf4j-impl "2.3"]
                  [org.apache.logging.log4j/log4j-core "2.3"]
+                 [org.clojure/tools.reader "0.9.2"]
                  [com.stuartsierra/component "0.2.3"]
                  [environ "1.0.0"]
                  [meta-merge "0.1.1"]
+                 [org.clojure/tools.namespace "0.2.10"]
+                 [reloaded.repl "0.1.0"]
 
                  ;; ClojureScript
                  [org.clojure/clojurescript "0.0-3297"]
@@ -58,6 +61,8 @@
                          :main {{name}}.core
                          :optimizations :advanced
                          :pretty-print false}}]}
+
+  :profiles {:dev {:source-paths ["dev_src"]}}
 
   :figwheel {
              ;; :http-server-root "public" ;; default and assumes "resources" 
