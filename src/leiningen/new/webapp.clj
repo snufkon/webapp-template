@@ -17,12 +17,18 @@
              ;; resources
              ["resources/public/index.html" (render "index.html" data)]
 
+
+
+             ;;;
+             ;;; src
+             ;;;
+             
              ;; clj
-             ["src/clj/{{sanitized}}/core.clj" (render "clj/core.clj" data)]
+             ["src/clj/{{sanitized}}/core.clj" (render "src/clj/core.clj" data)]
 
              ;; cljs
-             ["src/cljs/{{sanitized}}/core.cljs" (render "cljs/core.cljs" data)]
+             ["src/cljs/{{sanitized}}/core.cljs" (render "src/cljs/core.cljs" data)]
 
              ;; scss
-             ["src/scss/style.scss" (render "scss/style.scss" data)]
-             ["src/scss/normalize.scss" (render "scss/normalize.scss" data)])))
+             ["src/scss/style.scss" (render "src/scss/style.scss" data)]
+             ["src/scss/normalize.scss" (render "src/scss/normalize.scss" data)])))
